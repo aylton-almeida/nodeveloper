@@ -1,50 +1,65 @@
-h1{
-	font-family: "Roboto" Arial sans
+.navbar{
+	position: fixed;
+	top: 0;
+	width: 100%
 }
 
-.block-1{
-	background: url("../imgs/mainBackground.jpg") no-repeat center center fixed;
-	background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    transition: all .5s
+.block-1 {
+  background: #f8f9fa no-repeat center center fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: #1A2530;
+	transition: all .5s;
 }
 
-nav{
-
+.main-title>span{
+	color: #FF283F;
 }
 
 /* Extra small devices (phones, 600px and down) */
-
 @media only screen and (max-width: 576px) {
-	main{
-		height: 1200px;
+  main {
+    height: 1200px;
+  }
+
+	.navbar-brand>img{
+		height: 50px;
 	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+  main {
+    height: 1200px;
+  }
 
-@media only screen and (min-width: 768px){
-	main{
-		height: 1200px;
+	.navbar-brand>img{
+		height: 50px;
 	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main {
+    height: 900px;
+  }
 
-@media only screen and (min-width: 992px){
-	main{
-		height: 900px;
+	.navbar-brand>img{
+		height: 30px;
 	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-
 @media only screen and (min-width: 1200px) {
-	main{
-		height: 917px;
+  main {
+    height: 917px;
+  }
+
+	.navbar-brand>img{
+		height: 30px;
 	}
 }

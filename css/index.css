@@ -4,9 +4,15 @@
 	width: 100%
 }
 
+.navbar-brand>img{
+	height: 30px;
+}
+
+body{
+	background-color: #f8f9fa;
+}
+
 .block-1 {
-  background: #f8f9fa no-repeat center center fixed;
-  background-size: 100% 100%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,10 +31,6 @@
   main {
     height: 1200px;
   }
-
-	.navbar-brand>img{
-		height: 50px;
-	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -36,10 +38,6 @@
   main {
     height: 1200px;
   }
-
-	.navbar-brand>img{
-		height: 50px;
-	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -47,10 +45,6 @@
   main {
     height: 900px;
   }
-
-	.navbar-brand>img{
-		height: 30px;
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -58,8 +52,4 @@
   main {
     height: 917px;
   }
-
-	.navbar-brand>img{
-		height: 30px;
-	}
 }

@@ -8,13 +8,8 @@
 	height: 30px;
 }
 
-body{
-	background-color: #f8f9fa;
-}
-
 .block-1 {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -28,28 +23,28 @@ body{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-  main {
-    height: 400px;
+  .block-1{
+  	height: 600px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-  main {
-    height: 600px;
+  .block-1{
+  	height: 800px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  main {
-    height: 900px;
+  .block-1{
+  	height: 1000px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  main {
-    height: 917px;
+  .block-1{
+  	height: 1000px;
   }
 }

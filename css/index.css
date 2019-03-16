@@ -4,11 +4,12 @@
 	width: 100%
 }
 
-.navbar-brand>img{
-	height: 30px;
+main{
+	background: url("../imgs/background.png") no-repeat center center fixed;
+	background-size: cover;
 }
 
-.block-1 {
+.section-1 {
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -23,28 +24,28 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-  .block-1{
+  .section-1{
   	height: 600px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-  .block-1{
+  .section-1{
   	height: 800px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .block-1{
+  .section-1{
   	height: 1000px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .block-1{
+  .section-1{
   	height: 1000px;
   }
 }

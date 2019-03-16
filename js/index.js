@@ -20,10 +20,12 @@ $('.scrollTo').click(function() {
 //Change active link when scrolling
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-		let x = $("[id^='section']")
-		console.log(typeof x);
-		console.log($(x[1]).offset().top);
-    if ($(x[1]).offset().top == scroll) {
-			console.log("ok");
-    }
+		let sections = $("[id^='section']");
+		for (var i = 0; i < sections.length; i++) {
+			console.log($(sections[i]).offset().top + '//' + scroll);
+			$('' + $(sections[i]).attr('href')).addClass($(sections[i]).offset().top >= scroll? 'active' : '');
+		}
+    // if (($(x[1]).offset().top - 100) == scroll) {
+		// 	console.log("ok");
+    // }
 });

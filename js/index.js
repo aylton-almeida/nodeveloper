@@ -1,5 +1,5 @@
 //Animação texto inicial
-$('#section1').on("mouseenter mouseleave", (e) => {
+$('#section1').on("mouseenter mouseleave", function(e) {
   let size = e.type === "mouseenter" ? 3 : 2.5;
   $('.main-title').animate({
     fontSize: size + "em"
@@ -18,7 +18,6 @@ $('.scrollTo').click(function() {
       scrollTop: offSet
     }, 500)
   }
-  return false;
 })
 
 //Change active link when scrolling

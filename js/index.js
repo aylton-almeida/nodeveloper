@@ -1,3 +1,8 @@
+//Fechar navbar ao click
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 //Animação texto inicial
 $('#section1').on("mouseenter mouseleave", function(e) {
   let size = e.type === "mouseenter" ? 3 : 2.5;

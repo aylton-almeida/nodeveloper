@@ -30,6 +30,10 @@ main {
   background: linear-gradient(0deg, #f8f9fa 40%, #FF283F 40%);
 }
 
+.card{
+  opacity: 0
+}
+
 .card-text>span{
   font-weight: bold
 }
@@ -76,7 +80,7 @@ main {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 576px){
   .section-1, .section-2 {
     height: 800px;
   }

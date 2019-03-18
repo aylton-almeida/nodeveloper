@@ -1,6 +1,6 @@
 //Fechar navbar ao click
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
+$('.navbar-nav>li>a').on('click', function() {
+  $('.navbar-collapse').collapse('hide');
 });
 
 //Animação texto inicial
@@ -31,8 +31,14 @@ $(window).scroll(function(event) {
     let sectionID = $(obj).attr('href');
     if ($(sectionID).visible(true)) {
       $(obj).addClass('active');
-    }else {
-    	$(obj).attr('class', 'nav-link scrollTo');
+    } else {
+      $(obj).attr('class', 'nav-link scrollTo');
     }
   })
+  $('.card').css('opacity', 0)
+  if ($('.card').visible(true)) {
+    $('.card').animate({
+      opacity: 100
+    }, 10000);
+  }
 });
